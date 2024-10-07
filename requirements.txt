@@ -1,0 +1,8 @@
+gurobipy
+numpy
+plotly
+pandas
+kaleido
+nbformat
+openpyxl
+coverage
