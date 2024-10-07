@@ -53,6 +53,9 @@ class ProblemData:
     @staticmethod
     def basic_process(input_data):
 
+        # Considerando que a descrição do problema não menciona muita coisa sobre as ondas, imagino que seja um valor
+        # constante num periodo de tempo. Por isso, criei 50 ondas. Se for necessário, basta alterar o range.
+        # Também seria interessante reduzir a quantidade de ondas necessárias para atender a demanda.
         ProblemData.ondas = [Onda(x) for x in range(1, 51)]
         ProblemData.items = [Item(nome=nome) for nome in set([x.item for x in input_data['Planilha1']])]
         ProblemData.caixas = [Caixa(caixa_id=caixa_id) for caixa_id in
